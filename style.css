@@ -1,0 +1,380 @@
+/* Theme Name: lesptitsillumines
+Theme URI: http://www.lesptitsillumines.fr/
+Description: The first theme created by Barbara Govin and Camille Paoletti.
+Version: 0.1
+Author: Barbara Govin and Camille Paoletti
+Creation-Theme by Francis Chouquet || http://www.lesptitsillumines.fr   */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('font/raleway-light-webfont.eot');
+    src: url('font/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway-light-webfont.woff2') format('woff2'),
+         url('font/raleway-light-webfont.woff') format('woff'),
+         url('font/raleway-light-webfont.ttf') format('truetype'),
+         url('font/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('font/raleway-regular-webfont.eot');
+    src: url('font/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway-regular-webfont.woff2') format('woff2'),
+         url('font/raleway-regular-webfont.woff') format('woff'),
+         url('font/raleway-regular-webfont.ttf') format('truetype'),
+         url('font/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*---GENERAL----------*/
+
+body{
+    background-color:  #ffffff;
+    color: #615f6a;
+    font: 1em/1.6 'ralewaylight', sans-serif;
+}
+
+.container{ 
+    width:960px;
+    margin: 0 auto;
+}
+
+.grdbandeau{
+    height:480px;
+}
+
+.bandeauformule{
+ background-color: #ffee63; 
+}
+
+.bandeauimpair{
+    height:300px;
+    padding: 20px 0;
+    color:#fff;
+    background: url(../img/fleches.png) no-repeat center top #fd4f30;
+    position: relative;
+}
+
+/*---FONTS----------*/
+
+h2, .btn, nav a{
+    font-family: 'Amatic SC', cursive;
+}
+h1{
+    font-size: 0.9rem;
+}
+h1 img{
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+}
+h2{
+    font-size: 4.64rem;
+    color:#fd4f30;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+}
+nav a{
+    font-size: 1.71rem;
+    color: #615f6a;
+}
+.grdbandeau p{
+    font-size: 0.88rem;
+    padding-top:0.6rem;
+    line-height: 1.4rem;
+}
+
+#commander h2{
+    color:#f0dd3e;
+}
+
+/*---BANDEAUX----------*/
+
+.btn{
+    width:192px;
+    height:87px;
+    display:block;
+    text-align: center;
+    line-height: 90px;
+    margin-top: 20px;
+    background-color: #fafafa;
+    border: 4px solid #ffee63;
+    text-decoration: none;
+    font-size: 3rem;
+    color: #615f6a;
+}
+
+.btn:hover{
+    background-color: #ffee63;
+    border: 4px solid #fafafa;
+    color: #615f6a;
+    box-shadow: 0 3px 5px rgba(100,100,100,.1);
+
+}
+/*---HEADER----------*/
+
+header{
+    height: 250px;
+    z-index: 100;
+}
+
+.header-container{
+	position: static;
+    background-color: #ffee63;
+    text-align: center;
+    box-shadow: 0 3px 5px rgba(100,100,100,.1);
+}
+
+.header-container.anim{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: -180px;
+}
+
+h1 span{
+    font-size: 0;      
+}
+h1{
+    padding: 12px 0 12px 0;
+    font-size: 
+}
+
+nav a {
+	text-decoration: none;
+	padding: 15px 0;
+	width: 20%;
+	display: inline-block;
+	transition: 0.3s;
+}
+.lucien {
+   width:151px;
+   height:157px;
+   background: url(./img/lucien_nav.png) no-repeat;
+   display: inline-block;
+     position: absolute;
+  top: 130px;
+  left: 50%;
+  margin-left: -75px;
+    -webkit-transition:top 0.5s;
+    transition:top 0.5s;
+}
+.margedroitenav{
+    margin-right: 80px;
+}
+.margegauchenav{
+    margin-left: 80px;
+}
+.lucien:hover{
+    background: url(./img/lucien_nav_hover.png) no-repeat;
+}
+.lucien.anim{
+    top:164px;
+    transform: scale(0.8);
+    -webkit-transition:top 0.5s;
+    transition: 0.5s;
+}
+nav {
+    padding-top:27px;
+    //height: 204px;
+}
+
+nav .active{
+    background-color: #fafafa;
+}
+
+nav a:hover{
+    background-color:#fafafa;
+}
+
+h2 span{ 
+    display: block;
+}
+
+
+/*SIDEBAR
+.sidebar { float: right; width: 250px; }
+.sidebar ul{ list-style-type: none; margin: 0; padding: 0 10px; }
+.sidebar { float: right; width: 225px; margin: 20px 0 20px 25px; }
+.sidebar h2 { font-size: 1.2em; }*/
+
+/*---FOOTER------*/
+
+footer{
+    background-color: #e6e5e5;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+footer > div > div{
+    display: inline-block;
+    width:24.5%;
+    height: 300px;
+    vertical-align: top;
+    text-align: center;
+}
+.equipe{
+    background-color: #ffee63;
+    position: relative;
+}
+.equipe figure{
+    display: inline-block;
+}
+.equipe h2{
+    font-size: 3rem;
+    color: #615f6a;
+}
+.equipe figcaption{
+    font-size: 0.8rem;
+}
+.equipe p {
+    position:absolute; 
+    bottom:0; 
+    left:0; 
+    right:0; 
+    top:100%;
+    background:rgba(252,252,252,.0);
+    text-align: center;
+    overflow:hidden;
+    transition:0.3s;
+}
+.equipe:hover p{
+    top:0;
+    padding: 30px 5px 0 10px;
+    background:rgba(254,246,182,.9);
+    font-size: 0.95rem;
+}
+.contact{
+    font-size: 1rem;
+}
+.contact li{
+    display: inline-block;
+    margin-left: 5px;
+}
+.presse p{
+    padding-bottom: 30px;
+}
+.newsletter{
+    background-color: #ffee63;
+}
+.text-newsletter{
+    background-color: #ffee63;
+    border: 4px solid #615f6a;
+    width:200px;
+    padding:0;
+    margin-top: 10px;
+    color: #615f6a;
+    font: 0.9rem/1.6 'Raleway', sans-serif;
+    text-align: center;
+}
+.btn-newsletter {
+    width:200px;
+    padding:15px 0;
+	margin-top:10px;
+	margin-left: auto;
+	margin-right: auto;
+    background-color: #ffee63;
+    border: 4px solid #615f6a;
+}
+.btn-newsletter:hover{
+    background-color: #fff;
+    border: 4px solid #fff;
+    color: #615f6a;
+    cursor:pointer;
+}
+.newsletter img{
+	margin-top:30px;
+}
